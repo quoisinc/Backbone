@@ -1,0 +1,28 @@
+    <div class="weather-container">
+        <div class="yw-cond-gray"><span id='city'><%= weather.city %></span><span id='region'><%= weather.region %></span><span id='zipcode'><%= weather.zipquery %></span></div>
+        <div style="width:500px;height: auto;" class="<%= weather.daynight %>" id="yw-forecast">
+        <em id='ws-title'></em>
+        <div id="yw-cond" class="yw-cond"><%= weather.yw_cond %></div>
+        <dl>
+          <dt>Feels Like:</dt>
+          <dd id="dd-temp"><%= weather.dd_temp %></dd>
+          <dt>Barometer:</dt>
+          <dd style="position: relative;"><span id="pressure"><%= weather.pressure %></span> in and rising</dd>
+          <dt>Humidity:</dt>
+          <dd id="humidity"><%= weather.humidity %></dd>
+          <dt>Visibility:</dt>
+          <dd id="visibility"><%= weather.visibility %></dd>
+          <dt>Wind:</dt>
+          <dd id="wind"><%= weather.wind %></dd>
+          <dt>Sunrise:</dt>
+          <dd id='sunrise'><%= weather.sunrise %></dd>
+          <dt>Sunset:</dt>
+          <dd id='sunset'><%= weather.sunset %></dd>
+        </dl>
+        <div class="forecast-temp" style="">
+            <div id="yw-temp" style=""><%= weather.yw_temp %></div>
+            <p>High: <span id="yw-temp-high"><%= weather.temp_high %></span>&nbsp; Low: <span id="yw-temp-low"><%= weather.temp_low %></span></p>
+            <br />
+        </div>
+        <div id="forecast-icon" class="forecast-icon"><img src="<%= weather.iconsrc %>" /></div>
+    </div>
