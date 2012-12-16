@@ -7,9 +7,9 @@ define([
 
     return function () {
         var view = Backbone.View.extend({
-            el: $(".view2"),
+            el: $(".view3"),
             render: function () {
-                $(".view2").html(View);
+                $(".view3").html(View);
             }
         });
         this.init = function () {
