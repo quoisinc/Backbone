@@ -23,10 +23,11 @@ define([
             var navController = new NavController();
             navController.init();
 
-            var homeView = new HomeController();
-            homeView.render();
+            var homeController = new HomeController();
+            homeController.init();
 
-            var footerView = new FooterController();
+            var footerController = new FooterController();
+            footerController.init();
 
         });
 
