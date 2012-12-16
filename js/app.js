@@ -21,7 +21,7 @@ define([
         app_router.on('route:defaultAction', function () {
 
             var navController = new NavController();
-            navController.render();
+            navController.init();
 
             var homeView = new HomeController();
             homeView.render();
