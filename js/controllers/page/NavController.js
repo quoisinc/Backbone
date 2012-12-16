@@ -13,8 +13,8 @@
             }
         });
         this.init = function(){
-            var v = new view()
-            v.render()
+            var v = new view();
+            v.render();
             $('.menu li').click(function () {
                 $('.views').hide();
                 $('.' + $(this).attr('view')).show();
