@@ -11,7 +11,7 @@ define([
             el: $("#footer"),
             initialize: function () {
                 var that = this;
-                var options = { query: MG.Config.User }
+                var options = { query: MG.Config.User };
                 var onDataHandler = function (collection) {
                     that.render();
                 }
@@ -28,7 +28,7 @@ define([
             }
         });
         this.init = function () {
-            var v = new view()
+            var v = new view();
         };
     };
 
