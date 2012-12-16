@@ -11,7 +11,7 @@ define([
             el: $(".view1"),
             initialize: function () {
                 var _this = this;
-                var options = { query: MG.Config.Zipcode }
+                var options = { query: MG.Config.Zipcode };
                 var onDataHandler = function (collection, req) {
                     _this.render();
                 }
@@ -28,8 +28,8 @@ define([
             }
         });
         this.init = function () {
-            var v = new view()
-            v.render()
+            var v = new view();
+            v.render();
         };
     };
   
